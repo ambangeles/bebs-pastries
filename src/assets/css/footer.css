@@ -1,0 +1,42 @@
+footer {
+    background-color: #B7B19A;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .social-media a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin: 10px 0;
+        min-width: 130px;
+    }
+    
+    footer .social-media a:hover {
+        color: #db3639;
+        transition: 300ms color ease-in-out;
+    }
+
+    footer p { 
+        color: white;
+    }
+
+
+@media (max-width: 480px) {
+    footer {
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+    

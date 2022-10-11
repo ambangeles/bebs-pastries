@@ -1,0 +1,31 @@
+#featured-container {
+    position: relative;
+}
+
+div.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+    #brownie-bg {
+        position: absolute;
+        top: -56.8px;
+        left: -20px;
+        z-index: -1;
+        width: 50%; 
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+        h1 span {
+            color: #db3639;
+        }
+
+@media (min-width: 481px) {
+    #brownie-bg {
+        width: 30%; 
+    }
+}

@@ -1,0 +1,43 @@
+section {
+	height: 400px;
+	display: flex;
+    margin: 10px;
+}
+
+    section img {
+        box-shadow: 0px 0px 15px -1px rgb(101, 101, 101);
+        opacity: 0%;
+        border-radius: 10px;
+        transform: translateX(-200px);
+        transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+    }
+
+    section div {
+        padding: 20px;
+        opacity: 0%;
+        transition: opacity 500ms ease-in-out 200ms;
+    }
+
+    section div h2 {
+        font-size: 1.5rem;
+        color: #B7B19A;
+    }
+
+    section div a {
+        text-decoration: none;
+        color: #db3639;
+        font-weight: 700;
+    }
+
+@media (max-width: 480px) {
+    section img {
+        max-height: 300px;
+        width: auto;
+    }
+
+    section {
+        flex-direction: column;
+        height: 600px;
+        align-items: center;
+    }
+}
