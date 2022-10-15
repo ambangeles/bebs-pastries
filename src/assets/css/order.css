@@ -1,0 +1,38 @@
+.order {
+    display: flex;
+    border-bottom: 1px solid var(--color-brown);
+}
+
+.order:last-child {
+    border-bottom:none;
+}
+
+.trash {
+    color: var(--color-red);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+	.order {
+		flex-direction: column;
+		position: relative;
+	}
+
+    .order:first-child {
+        border-top: 1px solid var(--color-brown);
+	}
+
+	.order .flex-items:last-child {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+@media (min-width: 501px) {
+	.order {
+		justify-content: space-around;
+		align-items: center;
+	}
+}

@@ -1,0 +1,107 @@
+.active-modal {
+    overflow: hidden;
+}
+
+.modal-container .modal, .modal-container .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+    .modal-container .overlay {
+        background: rgba(49,49,49,0.8);
+    }
+
+    .modal-container .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 14px 28px;
+        border-radius: 10px;
+        max-width: 600px;
+        min-width: 300px;
+        z-index: 2;
+        font-size: 1.2rem;
+    }
+
+
+    .modal-container label {
+        display: block;
+        margin: 10px 0;
+    }
+
+        .modal-container input, .modal-container textarea  {
+            width: 100%;
+            padding: 7px;
+            border-radius: 10px;
+        }
+        
+        .modal-container textarea  {
+            resize: vertical;
+            height: 100px;
+        }          
+
+        .modal-container input[type="text"], textarea  {
+            border: 1px solid black;
+            margin: 2px 0;
+        }      
+
+        .modal-container input[type="text"]:focus, textarea:focus{
+            outline: none;
+            border: 1px solid var(--color-brown) ;
+            box-shadow: 0px 0px 5px -2px black;
+        }
+        
+
+    .modal-container .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 7px;
+        z-index: 2;
+        border: none;
+        background-color: white;
+        color: var(--color-red);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .modal-container .btn-modal{
+        border: none;
+        color: white;
+        background-color: var(--color-red);
+        font-weight: 700;
+        border-radius: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px -4px var(--color-shadow);
+        transition: transform 40ms ease-in;
+    }
+    
+    .modal-container .btn-modal:active{
+        transform: scale(1.2);
+    }
+
+    .modal-container input[type="submit"]{
+        border: none;
+        color: white;
+        background-color: var(--color-red);
+        font-weight: 700;
+        border-radius: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px -4px var(--color-shadow);
+        transition: transform 40ms ease-in;
+    }
+    
+    .modal-container input[type="submit"]:active{
+        transform: scale(1.2);
+    }
+

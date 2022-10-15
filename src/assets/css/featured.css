@@ -1,43 +1,68 @@
-section {
+.featured-section {
 	height: 400px;
 	display: flex;
     margin: 10px;
 }
 
-    section img {
-        box-shadow: 0px 0px 15px -1px rgb(101, 101, 101);
+    .featured-section img {
+        box-shadow: 0px 0px 10px -2px var(--color-shadow);
         opacity: 0%;
         border-radius: 10px;
         transform: translateX(-200px);
         transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
     }
 
-    section div {
-        padding: 20px;
+    .featured-section > div {
+        padding: 10px 20px;
         opacity: 0%;
         transition: opacity 500ms ease-in-out 200ms;
+        background-color: #ffffffcc;
+        margin-left: 10px;
+        border-radius: 10px;
     }
 
-    section div h2 {
-        font-size: 1.5rem;
-        color: #B7B19A;
-    }
+        .featured-section > div h2 {
+            font-size: 1.5rem;
+            color: var(--color-brown);
+        }
+        
+        .featured-section > div label {
+            display: block;
+            margin: 10px 0;
+        }  
+        
+        .featured-section > div > button{
+            display: block;
+            border: none;
+            color: white;
+            background-color: var(--color-red);
+            font-weight: 700;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px -4px var(--color-shadow);
+            transition: transform 40ms ease-in;
+            margin-top: 20px;
+        }
 
-    section div a {
-        text-decoration: none;
-        color: #db3639;
-        font-weight: 700;
-    }
+        .featured-section > div > button:active{
+            transform: scale(1.2);
+        }
+
 
 @media (max-width: 480px) {
-    section img {
+    .featured-section img {
         max-height: 300px;
         width: auto;
     }
 
-    section {
+    .featured-section > div {
+        margin-top: 10px;
+    }
+
+    .featured-section {
         flex-direction: column;
-        height: 600px;
+        height: 100%;
         align-items: center;
     }
 }

@@ -12,9 +12,9 @@ import "../assets/css/slider.css";
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 
-export default function App() {
+function Slider() {
 	return (
-		<>
+		<div className="slider-container">
 			<Swiper
 				autoplay={{ delay: 2000, disableOnInteraction: false }}
 				slidesPerView={1}
@@ -28,7 +28,7 @@ export default function App() {
 				className="mySwiper"
 			>
 				<SwiperSlide>
-					<img src={require("../assets/img/cheesecake/cheesecake1.jpg")} alt="products" />
+					<img src={require("../assets/img/cheesecake/cheesecake3.jpg")} alt="products" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<img src={require("../assets/img/sansrival/sansrival1.jpg")} alt="products" />
@@ -46,6 +46,8 @@ export default function App() {
 					<img src={require("../assets/img/cake/cake8.jpg")} alt="products" />
 				</SwiperSlide>
 			</Swiper>
-		</>
+		</div>
 	);
 }
+
+export default Slider;
