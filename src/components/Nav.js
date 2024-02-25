@@ -21,7 +21,7 @@ function Nav({ cartNo, nav }) {
 			<Link to="/products" className={url === "/products" ? "active" : ""}>
 				Products
 			</Link>
-			{nav !== "footer" ? (
+			{/* {nav !== "footer" ? (
 				<Link to="/cart" className={url === "/cart" ? "active" : ""}>
 					<div className="cart-container">
 						<FontAwesomeIcon icon={faCartShopping} />
@@ -35,7 +35,7 @@ function Nav({ cartNo, nav }) {
 						<span className={url === "/cart" ? "active-cart" : ""}>{cartNo}</span>
 					</div> Cart
 				</Link>
-			)}
+			)} */}
 		</nav>
 	);
 }

@@ -9,7 +9,7 @@ function Navbar({ cartNo }) {
 			<Link to="/">
 				<img src={require("../assets/img/logo.png")} alt="Bebs' Pastries" />
 			</Link>
-			<Nav cartNo={cartNo} />
+			{/* <Nav cartNo={cartNo} /> */}
 		</header>
 	);
 }
