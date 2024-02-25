@@ -18,10 +18,10 @@ function Featured({ img, scroll, handleAddToCartClick, info: { name, price, desc
 			<img src={img} alt="crinkle" style={offset >= scroll ? { opacity: "100%", transform: "translateX(0px)" } : {}} />
 			<div style={offset >= scroll ? { opacity: "100%", transform: "translateX(0px)" } : {}}>
 				<h2>
-					{name} - ₱{price}
+					{name}
 				</h2>
 				<p>{desc}</p>
-				<span>
+				{/* <span>
 					Quantity: <QuantityButton qty={qty} setQty={setQty} />
 				</span>
 				<button
@@ -31,7 +31,7 @@ function Featured({ img, scroll, handleAddToCartClick, info: { name, price, desc
 					}}
 				>
 					Add to Cart!
-				</button>
+				</button> */}
 			</div>
 		</section>
 	);

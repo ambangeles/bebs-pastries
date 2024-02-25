@@ -34,7 +34,7 @@ function App() {
 				<Route exact path="/" element={<Home handleAddToCartClick={handleAddToCartClick} />}></Route>
 				<Route exact path="/about" element={<About />}></Route>
 				<Route exact path="/products" element={<Products handleAddToCartClick={handleAddToCartClick} />}></Route>
-				<Route exact path="/cart" element={<Cart orders={orders} setOrders={setOrders} />}></Route>
+				{/* <Route exact path="/cart" element={<Cart orders={orders} setOrders={setOrders} />}></Route> */}
 			</Routes>
 			<Footer cartNo={orders.length} />
 		</Router>

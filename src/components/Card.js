@@ -21,7 +21,7 @@ function Card({ img, handleAddToCartClick, info: { name, price } }) {
 			</Swiper>
 			<div>
 				<h2>{name}</h2>
-				<QuantityButton qty={qty} setQty={setQty} />
+				{/* <QuantityButton qty={qty} setQty={setQty} />
 				<button
 					id="product-button"
 					onClick={() => {
@@ -30,7 +30,7 @@ function Card({ img, handleAddToCartClick, info: { name, price } }) {
 					}}
 				>
 					Add to Cart!
-				</button>
+				</button> */}
 			</div>
 		</div>
 	);
