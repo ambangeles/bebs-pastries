@@ -21,7 +21,6 @@ function Footer({ cartNo }) {
 			<div className="contact">
 				<h3>Contact Us</h3>
 				<a href="tel:+639274959914">+639274959914</a>
-				<a href="mailto:bebspastries@gmail.com">bebspastries@gmail.com</a>
 			</div>
 			<p>© 2022 Bebs' Pastries. All Rights Reserved.</p>
 		</footer>
